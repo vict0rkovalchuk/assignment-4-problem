@@ -8,7 +8,10 @@ const app = Vue.createApp({
   },
   computed: {
     paragraphClasses() {
-      return { [`${this.inputValue} visible`]: this.paragraphVisible, [`${this.inputValue} hidden`]: !this.paragraphVisible }
+      return { 
+        [`${this.inputValue} visible`]: this.paragraphVisible, 
+        [`${this.inputValue} hidden`]: !this.paragraphVisible 
+      }
     }
   },
   methods: {
